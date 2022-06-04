@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="Login2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BNP-kc-5Hq">
+                                <rect key="frame" x="135" y="68" width="144" height="144"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-NT-32w">
+                                <rect key="frame" x="16" y="244" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Cidade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nw-KB-hai">
+                                <rect key="frame" x="16" y="334" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem Vindo! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI1-WM-hZx">
+                                <rect key="frame" x="129" y="431" width="156" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Idade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQl-Fx-P2v">
+                                <rect key="frame" x="16" y="289" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.6793435992675313" green="0.66266812597024494" blue="0.84762328259191921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dI1-WM-hZx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3l2-zM-Gdg"/>
+                            <constraint firstItem="dI1-WM-hZx" firstAttribute="top" secondItem="2nw-KB-hai" secondAttribute="bottom" constant="68" id="9XR-yC-TWc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2nw-KB-hai" secondAttribute="trailing" constant="16" id="Ack-RG-yR3"/>
+                            <constraint firstItem="BNP-kc-5Hq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MDF-Y5-O7n"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pLd-NT-32w" secondAttribute="trailing" constant="16" id="VaI-QY-jma"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZQl-Fx-P2v" secondAttribute="trailing" constant="16" id="aQI-Z0-Ibz"/>
+                            <constraint firstItem="dI1-WM-hZx" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="amg-KH-TCV"/>
+                            <constraint firstItem="pLd-NT-32w" firstAttribute="top" secondItem="BNP-kc-5Hq" secondAttribute="bottom" constant="32" id="fgI-5z-0Cs"/>
+                            <constraint firstItem="BNP-kc-5Hq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="135" id="gct-KI-IEC"/>
+                            <constraint firstItem="ZQl-Fx-P2v" firstAttribute="top" secondItem="pLd-NT-32w" secondAttribute="bottom" constant="16" id="hhc-QN-Sbt"/>
+                            <constraint firstItem="pLd-NT-32w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="iGO-pn-xaw"/>
+                            <constraint firstItem="pLd-NT-32w" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="kPv-bG-SDQ"/>
+                            <constraint firstItem="2nw-KB-hai" firstAttribute="top" secondItem="ZQl-Fx-P2v" secondAttribute="bottom" constant="16" id="meP-zp-qY1"/>
+                            <constraint firstItem="2nw-KB-hai" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="nHv-2L-5MX"/>
+                            <constraint firstItem="ZQl-Fx-P2v" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="rK6-2R-mrm"/>
+                            <constraint firstItem="BNP-kc-5Hq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="t0B-uD-2Ea"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageWelcome" destination="ZQl-Fx-P2v" id="gqR-tZ-mrJ"/>
+                        <outlet property="avatarWelcome" destination="BNP-kc-5Hq" id="CCC-2J-Xf0"/>
+                        <outlet property="cityWelcome" destination="2nw-KB-hai" id="Bw7-4J-tgI"/>
+                        <outlet property="nameWelcome" destination="pLd-NT-32w" id="qte-zl-Ct2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+</document>
